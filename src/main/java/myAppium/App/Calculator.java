@@ -33,9 +33,9 @@ public class Calculator {
 		driver.findElementById("com.miui.calculator:id/btn_1_s").click();
 		driver.findElementById("com.miui.calculator:id/btn_5_s").click();
 		driver.findElementById("com.miui.calculator:id/btn_equal_s").click();
-		String value2 = driver.findElementById("com.miui.calculator:id/result").getText();
-		String[] result2 = value2.split(" ");
-		int answer2 = Integer.parseInt(result2[1]);
-		System.out.println(answer2);
+		String secondValue = driver.findElementById("com.miui.calculator:id/result").getText();
+		String[] finalResult = secondValue.split(" ");
+		int display = Integer.parseInt(finalResult[1]);
+		System.out.println(display);
 	}
 }
